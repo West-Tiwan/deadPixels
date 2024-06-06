@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './Navbar.module.scss'
 
 const Navbar = (props) => {
     const setblue = () => {
@@ -12,10 +13,11 @@ const Navbar = (props) => {
     }
     return (
         <>
-            <div>Navbar</div>
-            <button onClick={setblue}>Blue</button>
-            <button onClick={setgreen}>Green</button>
-            <button onClick={setred}>Red</button>
+            <div className={styles.navi1}>
+                <button onClick={setblue}>Blue</button>
+                <button onClick={setgreen}>Green</button>
+                <button onClick={setred}>Red</button>
+            </div>
         </>
     )
 }
