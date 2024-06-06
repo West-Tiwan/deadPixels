@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './Checker.module.scss'
 
-const Checker = () => {
+const Checker = (props) => {
     return (
-        <div className={styles.checker}>Checker</div>
+        <div className={styles.checker} style={{backgroundColor:props.color}}></div>
     )
 }
 export default Checker
